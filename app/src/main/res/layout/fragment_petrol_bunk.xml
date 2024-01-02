@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/petrol"
+    android:gravity="center"
+    tools:context=".PetrolBunk">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#e91e63"
+        android:textSize="22sp"
+        android:layout_marginBottom="200dp"
+        android:textStyle="italic|bold"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="148dp"
+        android:layout_height="89dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="150dp"
+        android:backgroundTint="@color/blue"
+        android:layout_marginBottom="200dp"
+        android:text="Petrol Bunks" />
+
+
+</FrameLayout>

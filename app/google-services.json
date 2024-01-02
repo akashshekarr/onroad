@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "750844322303",
+    "project_id": "on-roadass",
+    "storage_bucket": "on-roadass.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750844322303:android:07c93978061bdc60cd47ca",
+        "android_client_info": {
+          "package_name": "com.example.login_register"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvGJ27IHSiJNDb5sulECsew486WlmAJms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

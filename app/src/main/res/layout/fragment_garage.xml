@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/garage"
+    android:gravity="center"
+    tools:context=".Garage">
+
+    <TextView
+        tools:ignore="HardcodedText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="22sp"
+        android:textColor="#673AB7"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/garage"
+        android:layout_width="132dp"
+        android:backgroundTint="@color/blue"
+        android:layout_height="101dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="200dp"
+        android:text="Garage" />
+
+</FrameLayout>
