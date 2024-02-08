@@ -150,7 +150,7 @@ public class ConfirmLoca extends AppCompatActivity implements OnMapReadyCallback
                                     "&radius=5000" +
                                     "&keyword=" + formattedSearchText +
                                     "&sensor=true" +
-                                    "&key=" + "AIzaSyDChlKsByLiOCND95trsDfIKOWv3YEFKFM";
+                                    "&key=" + "YOUR_API_KEY";
 
                             // Execute PlaceTask with the URL as a parameter
                             Log.d(url, "onClick: ");
