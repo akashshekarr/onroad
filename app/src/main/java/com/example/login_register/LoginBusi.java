@@ -39,7 +39,7 @@ public class LoginBusi extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginBusi.this, RegisterUser.class);
+                Intent intent = new Intent(LoginBusi.this, RegisterBusi.class);
                 startActivity(intent);
                 finish();
             }
@@ -67,7 +67,7 @@ public class LoginBusi extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
                                     Toast.makeText(LoginBusi.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(LoginBusi.this, HomePage.class);
+                                    Intent intent = new Intent(LoginBusi.this, InfoBusi.class);
                                     startActivity(intent);
                                 }
                                 else {

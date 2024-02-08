@@ -1,2 +1,6 @@
-package com.example.login_register;public class MainActivity {
+package com.example.login_register;
+
+import android.app.Activity;
+
+public class MainActivity extends Activity {
 }

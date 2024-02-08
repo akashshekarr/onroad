@@ -19,10 +19,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class RegisterBusi extends AppCompatActivity {
 
-    TextInputEditText editTextEmail, editTextPassword;
-
+    TextInputEditText editTextCompanyName, editTextEmail, editTextPassword, editTextOwnerName, editTextaddress, editTextownercno;
     Button signUp;
-
     TextView signIn;
 
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
@@ -30,12 +28,12 @@ public class RegisterBusi extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_user);
+        setContentView(R.layout.activity_register_busi);
 
         editTextEmail = findViewById(R.id.email);
         editTextPassword = findViewById(R.id.password);
-        signIn = findViewById(R.id.sign_in);
         signUp = findViewById(R.id.sign_up);
+        signIn = findViewById(R.id.sign_in);
 
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,16 +47,12 @@ public class RegisterBusi extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email, password;
+                String companyName, email, password, address,ownername,ownercno;
                 email = String.valueOf(editTextEmail.getText());
                 password = String.valueOf(editTextPassword.getText());
 
-                if(TextUtils.isEmpty(email)){
-                    Toast.makeText(RegisterBusi.this, "Enter Email", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if(TextUtils.isEmpty(password)){
-                    Toast.makeText(RegisterBusi.this, "Enter Password", Toast.LENGTH_SHORT).show();
+                if( TextUtils.isEmpty(email) || TextUtils.isEmpty(password)){
+                    Toast.makeText(RegisterBusi.this, "All fields are required", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -68,7 +62,7 @@ public class RegisterBusi extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     Toast.makeText(RegisterBusi.this, "Registration Successfully", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(RegisterBusi.this, LoginUser.class);
+                                    Intent intent = new Intent(RegisterBusi.this, LoginBusi.class);
                                     startActivity(intent);
                                 } else {
                                     Toast.makeText(RegisterBusi.this, "Authentication Failed", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LocationDetailsFragment">
+
+    <TextView
+        android:id="@+id/textViewCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owner Name:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewOwnerContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owner Contact:"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+
+    <Button
+        android:id="@+id/assist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assist Me" />
+
+    <!-- Add more TextViews or UI elements as needed -->
+
+</LinearLayout>
+

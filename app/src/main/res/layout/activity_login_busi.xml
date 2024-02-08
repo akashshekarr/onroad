@@ -28,7 +28,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -42,7 +42,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         app:passwordToggleEnabled="true"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -54,6 +54,24 @@
             android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/blue"
+            android:layout_marginRight="210dp"
+            android:text="Forgot Password?"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
     <Button
         android:id="@+id/sign_in"
         android:layout_width="match_parent"

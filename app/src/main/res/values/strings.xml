@@ -2,4 +2,13 @@
     <string name="app_name">Login-Register</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_confirm_loca">ConfirmLoca</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <!-- Inside res/values/strings.xml -->
+    <string name="your_string_name">#0x7f1201f5</string>
+
 </resources>

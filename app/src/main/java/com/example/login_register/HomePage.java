@@ -25,7 +25,7 @@ public class HomePage extends AppCompatActivity {
         business.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(HomePage.this, LoginUser.class);
+                Intent i = new Intent(HomePage.this, LoginBusi.class);
                 startActivity(i);
             }
         });
